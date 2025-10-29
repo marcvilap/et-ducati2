@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets'
+import imgBgLeaf from '@/assets/images/bg-leaf.webp'
+import imgDucati05 from '@/assets/images/ducati-05.webp'
+import imgLeaf from '@/assets/images/leaf.webp'
+---
+
+<div class="relative grid items-center gap-8 overflow-clip px-8 py-24 lg:grid-cols-2 xl:gap-24 xl:px-24">
+	<Image class="absolute top-0 -left-1 w-1/3 opacity-50 blur-xs" src={imgBgLeaf} width={640} densities={[2]} alt="" />
+
+	<div class="reveal reveal:opacity-0 reveal:scale-90 -mr-20 -ml-38 xl:-mr-26 xl:-ml-44">
+		<Image class="w-full" src={imgDucati05} width={1130} densities={[2]} alt="" />
+	</div>
+
+	<div class="reveal reveal:opacity-0 reveal:translate-y-24 relative space-y-4">
+		<Image class="absolute top-0 -z-1 w-32 rotate-45 max-xl:right-0 xl:-left-24 xl:w-48" src={imgLeaf} width={280} densities={[2]} alt="" />
+
+		<h2 class="mb-8 text-4xl font-bold text-balance uppercase md:text-6xl lg:text-right xl:text-7xl">Diseño que respira movimiento</h2>
+		<p>El diseño de la Multistrada V2 de Ducati recoge el ADN inconfundible de Ducati: una silueta equilibrada y con un frontal agresivo con su característico “pico”. Las líneas fluyen como una corriente de aire, pensadas no solo para la estética, sino para la funcionalidad.</p>
+		<p>El trabajo aerodinámico se nota en la protección contra el viento y en la gestión térmica: los nuevos deflectores laterales canalizan aire fresco hacia las piernas del piloto, mejorando el confort incluso en trayectos largos. También su colín se ha estrechado y acortado ligeramente para mejorar la ergonomía del pasajero, algo que se agradece ya que muchas veces las mejores rutas, son en compañía.</p>
+	</div>
+</div>

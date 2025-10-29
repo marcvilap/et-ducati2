@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets'
+import imgDucati07 from '@/assets/images/ducati-07.webp'
+import imgDucati08 from '@/assets/images/ducati-08.webp'
+import imgLeaf from '@/assets/images/leaf.webp'
+---
+
+<div class="grid gap-y-24 overflow-clip py-24 xl:grid-cols-3 xl:gap-24">
+	<div class="reveal reveal:opacity-0 reveal:translate-y-24 flex flex-col justify-center space-y-4 max-xl:px-8">
+		<p>La <strong>Multistrada V2</strong> no solo busca el rendimiento, sino también la accesibilidad. Ducati ha reducido su peso en 18 kilos respecto al modelo anterior, lo que la convierte en una de las más ligeras de su categoría. Este dato se traduce en una moto más manejable, más fácil de llevar en curvas o maniobrar en parado, perfecta tanto para conductores experimentados como para quienes buscan dar un salto a una moto versátil.</p>
+		<p>La ergonomía se ha revisado al detalle. El asiento puede ajustarse entre 850 y 830 mm, y existe la opción de elevarlo o bajarlo aún más según la complexión del piloto gracias a los asientos disponibles como accesorios. Además, gracias a la suspensión electrónica <strong>Ducati Skyhook Suspension</strong>, disponible en la versión S, y el botón dedicado en la piña izquierda que baja la suspensión de la moto en otros 8mm, facilita aún más las maniobras en parado).</p>
+	</div>
+
+	<div class="relative grid grid-cols-12 max-xl:aspect-video lg:gap-4 xl:col-span-2">
+		<div class="reveal reveal:opacity-0 reveal:scale-90 relative col-span-5">
+			<Image class="absolute size-full object-cover" src={imgDucati07} width={505} densities={[2]} alt="" />
+		</div>
+		<div class="reveal reveal:opacity-0 reveal:scale-90 relative col-span-7">
+			<Image class="absolute size-full object-cover" src={imgDucati08} width={715} densities={[2]} alt="" />
+		</div>
+
+		<Image class="absolute -top-12 right-24 w-32 -rotate-90 xl:w-48" src={imgLeaf} width={280} densities={[2]} alt="" />
+	</div>
+</div>

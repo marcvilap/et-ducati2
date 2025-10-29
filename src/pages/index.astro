@@ -1,0 +1,44 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import Block01 from '@/components/Block01.astro'
+import Block02 from '@/components/Block02.astro'
+import Block03 from '@/components/Block03.astro'
+import Block04 from '@/components/Block04.astro'
+import Block05 from '@/components/Block05.astro'
+import Block06 from '@/components/Block06.astro'
+import Block07 from '@/components/Block07.astro'
+import Block08 from '@/components/Block08.astro'
+import Block09 from '@/components/Block09.astro'
+import Block10 from '@/components/Block10.astro'
+---
+
+<Layout>
+	<main class="relative overflow-clip xl:h-[1000vw]">
+		<div id="container" class="xl:sticky xl:top-0 xl:grid xl:min-h-screen xl:w-[1000vw] xl:grid-cols-10 xl:will-change-transform">
+			<Block01 />
+			<Block02 />
+			<Block03 />
+			<Block04 />
+			<Block05 />
+			<Block06 />
+			<Block07 />
+			<Block08 />
+			<Block09 />
+			<Block10 />
+		</div>
+	</main>
+
+	<nav id="navigation" class="fixed inset-x-12 bottom-6 z-10 flex h-0.5 items-center justify-between rounded-full bg-[#E0D9C5] max-xl:hidden">
+		<span id="navigation-scroll" class="absolute inset-y-0 left-0 rounded-full bg-[#6E1B01]"></span>
+		<button data-goto="0" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="1" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="2" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="3" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="4" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="5" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="6" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="7" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="8" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+		<button data-goto="9" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button>
+	</nav>
+</Layout>

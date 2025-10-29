@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@theme {
+	--default-transition-duration: 0.3s;
+	--font-sans: 'Work Sans', sans-serif;
+	--breakpoint-sm: 28rem;
+	--breakpoint-md: 48rem;
+	--breakpoint-lg: 64rem;
+	--breakpoint-xl: 80rem;
+	--breakpoint-2xl: initial;
+}
+
+@layer base {
+	@font-face {
+		font-family: 'Work Sans';
+		font-style: normal;
+		font-weight: 100 900;
+		font-display: 'swap';
+		src: url(/work-sans-100-900.woff2) format('woff2-variations');
+	}
+
+	html {
+		@apply scroll-smooth bg-[#F3EEDE] text-[#6E1B01] max-[400px]:text-[4vw] min-[1536px]:text-[1.125vw] min-[1920px]:text-[20px];
+	}
+}
+
+@layer components {
+	.mask-leaft {
+		mask: url(./assets/icons/leaf.svg) no-repeat center;
+		mask-size: 50%;
+	}
+	[class*='reveal:'] {
+		@apply group-revealed:transition-all group-revealed:duration-1000 revealed:transition-all revealed:duration-1000 will-change-[transform,opacity];
+	}
+}
+
+@utility container {
+	@apply mx-auto px-6 md:px-12;
+}
+
+@custom-variant reveal (&.reveal);
+@custom-variant revealed (&.revealed);
+
+@view-transition {
+	navigation: auto;
+}

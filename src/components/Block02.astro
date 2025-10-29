@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets'
+import imgBgLeaf from '@/assets/images/bg-leaf.webp'
+import imgDucati01 from '@/assets/images/ducati-01.webp'
+import imgDucati02 from '@/assets/images/ducati-02.webp'
+---
+
+<div class="relative grid gap-8 py-24 max-xl:px-8 lg:grid-cols-3 xl:gap-24">
+	<Image class="absolute top-0 left-0 w-1/3 opacity-50 blur-xs" src={imgBgLeaf} width={640} densities={[2]} alt="" />
+
+	<div class="flex flex-col justify-center gap-8 text-xl xl:pl-24">
+		<p class="reveal reveal:opacity-0 reveal:translate-y-24">En esa invitación, la nueva Ducati Multistrada V2 se presenta como la compañera perfecta: ligera, cómoda, potente y lista para convertir cada kilómetro en una experiencia sensorial.</p>
+	</div>
+
+	<div class="grid grid-cols-2 gap-4 lg:col-span-2">
+		<div class="reveal reveal:opacity-0 reveal:scale-90 relative">
+			<Image class="size-full object-cover xl:absolute" src={imgDucati01} width={610} densities={[2]} alt="" />
+		</div>
+
+		<div class="reveal reveal:opacity-0 reveal:scale-90 relative xl:-mr-72">
+			<Image class="size-full object-cover xl:absolute" src={imgDucati02} width={970} densities={[2]} alt="" />
+		</div>
+	</div>
+</div>

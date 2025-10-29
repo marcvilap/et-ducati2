@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets'
+import imgLeaf from '@/assets/images/leaf.webp'
+---
+
+<div class="grid items-center gap-y-8 px-8 py-24 xl:grid-cols-2">
+	<div class="reveal reveal:opacity-0 reveal:scale-90 relative xl:px-24">
+		<h2 class="text-4xl font-bold text-balance uppercase md:text-6xl xl:text-7xl">Un corazón pensado para la aventura: el nuevo motor Ducati V2</h2>
+		<Image class="absolute top-10 right-24 w-56 rotate-90 max-xl:hidden" src={imgLeaf} width={280} densities={[2]} alt="" />
+	</div>
+
+	<div class="reveal reveal:opacity-0 reveal:translate-y-24 space-y-4 lg:columns-2 lg:gap-8">
+		<p>Bajo su carenado late un motor completamente nuevo: el <strong>Ducati V2</strong>, un bicilíndrico en V a 90° de 890 cc con distribución variable IVT. Una de las principales características de este nuevo motor, es su reducción de peso, solo 54,9 kilos, es decir 18 kilos menos que sus predecesoras, haciendo de esta que sea mucho más fácil de manejar.</p>
+		<p>Un motor ligero pero con una respuesta que ofrece 115 CV de potencia a 10.750 rpm y 92 Nm de par a 8.250 rpm, garantizando un manejo suave, controlado y lleno de energía en cualquier situación. La sensación de empuje es inmediata, pero nunca agresiva, perfecta para <strong>disfrutar del ritmo cambiante de las carreteras otoñales</strong>.</p>
+		<p>El resultado es una conducción más ágil, intuitiva y placentera. A bajas revoluciones, el motor ofrece una entrega de par generosa y progresiva, ideal para curvas lentas o recorridos urbanos. En carretera abierta, libera toda su alma deportiva con ese sonido inconfundible de Ducati Además, las nuevas relaciones de cambio, más cortas en primera y segunda, mejoran el control en tramos técnicos o de baja velocidad, <strong>ideal para sortear curvas cerradas o caminos de montaña</strong>. Además su sistema Ducati Quick Shift 2.0 garantiza transiciones más suaves y precisas entre marchas.</p>
+		<p>Esta optimización no solo se traduce en mejores prestaciones, sino también en una mayor eficiencia y en una reducción del consumo. En definitiva, una moto que combina la emoción deportiva con la practicidad de un motor robusto, refinado y <strong>preparado para cualquier aventura</strong>.</p>
+	</div>
+</div>

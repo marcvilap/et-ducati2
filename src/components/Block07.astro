@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets'
+import imgDucati06 from '@/assets/images/ducati-06.webp'
+---
+
+<div class="grid lg:grid-cols-2 lg:overflow-clip xl:py-24">
+	<div class="reveal reveal:opacity-0 reveal:scale-90 relative max-lg:aspect-video">
+		<Image class="absolute size-full object-cover" src={imgDucati06} width={960} densities={[2]} alt="" />
+	</div>
+	<div class="reveal reveal:opacity-0 reveal:scale-90 flex flex-col justify-center px-8 xl:px-24">
+		<h2 class="text-4xl font-bold text-balance uppercase max-lg:mb-8 max-lg:translate-y-24 md:text-6xl xl:text-7xl">Ligereza y ergonomía: una moto para todos los caminos</h2>
+	</div>
+</div>

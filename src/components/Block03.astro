@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets'
+import imgDucati04 from '@/assets/images/ducati-04.webp'
+import imgLeaf from '@/assets/images/leaf.webp'
+---
+
+<div class="grid gap-8 max-xl:px-8 lg:grid-cols-2 xl:grid-cols-3 xl:gap-24 xl:py-24">
+	<div class="reveal reveal:opacity-0 reveal:translate-y-24 flex flex-col justify-center gap-8 xl:col-span-2 xl:pl-96">
+		<h2 class="text-4xl font-bold text-balance uppercase md:text-6xl xl:text-7xl">Redescubrir lo cotidiano</h2>
+		<p class="xl:max-w-sm">En otoño, las rutas se llenan de matices: el sonido del viento entre los árboles, la luz dorada que se filtra entre las nubes, el contraste entre el asfalto húmedo y el calor del motor.</p>
+		<p class="xl:max-w-sm">La <strong>Multistrada V2</strong> está pensada para eso, para reconectar con la carretera y con uno mismo, con una conducción fluida y natural que se adapta tanto al día soleado como al chaparrón inesperado.</p>
+	</div>
+
+	<div class="relative max-md:aspect-square">
+		<Image class="reveal reveal:opacity-0 reveal:scale-90 absolute size-full object-cover" src={imgDucati04} width={560} densities={[2]} alt="" />
+		<Image class="reveal reveal:opacity-0 reveal:scale-90 absolute bottom-8 -left-12 w-48 max-lg:hidden xl:-left-32" src={imgLeaf} width={280} densities={[2]} alt="" />
+	</div>
+</div>

@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets'
+import imgDucati09 from '@/assets/images/ducati-09.webp'
+import imgLeaf from '@/assets/images/leaf.webp'
+---
+
+<div class="relative grid overflow-clip pb-24 lg:grid-cols-2 xl:px-24 xl:py-24">
+	<Image class="absolute right-6 bottom-12 -z-1 w-36 rotate-90 max-xl:hidden" src={imgLeaf} width={280} densities={[2]} alt="" />
+	<div class="reveal reveal:opacity-0 reveal:scale-90 relative xl:mr-24">
+		<Image class="absolute size-full object-cover" src={imgDucati09} width={630} densities={[2]} alt="" />
+	</div>
+	<div class="reveal reveal:opacity-0 reveal:translate-y-24 flex flex-col justify-center space-y-4 max-xl:px-8">
+		<h2 class="mb-8 text-4xl font-bold text-balance uppercase md:text-6xl xl:-mr-16 xl:text-6xl">Una compañera para la estación más viva</h2>
+		<p><strong>Hay algo en el otoño que invita a salir sin rumbo fijo</strong>, a perderse entre carreteras secundarias y a disfrutar del simple hecho de rodar. La <a class="underline" target="_blank" href="https://www.ducati.com/es/es/motocicletas/multistrada/multistrada-v2">Ducati Multistrada V2</a> está hecha para esos momentos: ágil en las curvas, segura sobre el asfalto húmedo y cómoda incluso en los trayectos más largos. Cada tecnología, cada detalle, está pensado para acompañar al piloto en ese viaje que empieza con el sonido de la primera marcha y termina cuando el paisaje se tiñe de dorado.</p>
+		<p>Porque no se trata sólo de recorrer kilómetros, sino de sentirlos. De que cada salida sea distinta, como lo es cada día de otoño. Con la Multistrada V2, <strong>la carretera se convierte en una extensión de tus sentidos</strong>: una invitación a explorar, a respirar y a disfrutar del viaje.</p>
+	</div>
+</div>

@@ -1,0 +1,56 @@
+---
+import Popover from '@/components/Popover.astro'
+
+import imgClima1 from '@/assets/images/clima-1.webp'
+import imgClima2 from '@/assets/images/clima-2.webp'
+import imgClima3 from '@/assets/images/clima-3.webp'
+import imgClima4 from '@/assets/images/clima-4.webp'
+import imgClima5 from '@/assets/images/clima-5.webp'
+import imgClima6 from '@/assets/images/clima-6.webp'
+import imgClima7 from '@/assets/images/clima-7.webp'
+import imgClima8 from '@/assets/images/clima-8.webp'
+---
+
+<Popover id="clima-1" color="bg-[#0082D2]" title="Clima Oceánico" image1={imgClima1} image2={imgClima2}>
+	<Fragment slot="text1">
+		<h2 class="text-2xl font-bold text-balance text-[#00619D] lg:text-3xl">Norte: cuando la humedad marca el ritmo</h2>
+		<p>El verde del norte de España tiene un precio: la humedad. En Galicia, Asturias, País Vasco y Navarra, las lluvias frecuentes y los cielos cubiertos forman parte del día a día. Esa misma humedad que mantiene los paisajes siempre vivos también se cuela en nuestras casas, alargando el tiempo que tarda en secarse la ropa y obligándonos a recurrir a tendederos interiores.</p>
+	</Fragment>
+	<Fragment slot="text2">
+		<p>Incluso en días sin lluvia, la sensación de humedad ambiental impide que la ropa se airee con rapidez y puede aparecer el temido olor a “ropa húmeda”. Aquí es donde la tecnología marca la diferencia. Las <a class="font-bold text-[#00619D] underline" target="_blank" href="https://www.bosch-home.es/es/category/hacer-la-colada/secadoras">secadoras Bosch</a> con <strong>bomba de calor y sensores de humedad</strong> ajustan automáticamente el ciclo y la temperatura según el nivel de agua presente en las prendas, optimizando el tiempo y evitando un consumo energético innecesario.</p>
+		<p>Así, aunque el pronóstico anuncie tormentas, el resultado sigue siendo el mismo: ropa seca, suave y lista para guardar. Porque cuando el clima no da tregua, contar con una secadora Bosch permite que la vida siga su curso, haga el tiempo que haga.</p>
+	</Fragment>
+</Popover>
+
+<Popover id="clima-2" color="bg-[#00AAE1]" title="Clima Continental" image1={imgClima3} image2={imgClima4}>
+	<Fragment slot="text1">
+		<h2 class="text-2xl font-bold text-balance text-[#00619D] lg:text-3xl">Centro: clima continental y retos de secado</h2>
+		<p>En el corazón de España, la meseta central y zonas como Madrid viven un clima continental que marca diferencias claras entre estaciones. Los inviernos son fríos y secos, mientras que los veranos pueden ser muy calurosos y soleados. Esta variabilidad afecta directamente al secado de la ropa: en invierno, la baja humedad y las temperaturas frías alargan el tiempo que tardan las prendas en secarse al aire, mientras que en verano, el calor intenso acelera el proceso, aunque la exposición prolongada al sol puede desgastar los tejidos si no se cuida correctamente.</p>
+	</Fragment>
+	<Fragment slot="text2">
+		<p>Aquí, Bosch convierte el secado en una experiencia más que una tarea rutinaria. Sus <a class="underline" target="_blank" href="https://www.bosch-home.es/es/category/hacer-la-colada/secadoras">secadoras con bomba de calor</a> y <strong>tecnología AutoDry</strong> ajustan automáticamente el ciclo según la humedad de las prendas, protegiendo los tejidos y evitando el sobrecalentamiento. Además, las secadoras con condensador autolimpiante ayudan a ahorrar energía, ya que este se limpia solo, manteniendo siempre el rendimiento energético óptimo.</p>
+		<p>Aunque el clima continental presente extremos de frío o calor, la colada no se ve comprometida: la ropa queda seca, lista para usar y cuidada al detalle. Con Bosch, secar la ropa deja de ser un reto y te puedes despedir de tender la ropa y de las largas horas esperando a que se seque, por lo que hacer la colada se convierte en un proceso cómodo, eficiente y delicado con cada prenda.</p>
+	</Fragment>
+</Popover>
+
+<Popover id="clima-3" color="bg-[#8CD26E]" title="Clima Mediterráneo" image1={imgClima5} image2={imgClima6}>
+	<Fragment slot="text1">
+		<h2 class="text-2xl font-bold text-balance text-[#00619D] lg:text-3xl">Mediterráneo: sol, calor… y aire seco</h2>
+		<p>En la costa este de España y en las islas Baleares, el clima mediterráneo nos regala largos veranos y cielos despejados la mayor parte del año. La combinación de sol, calor y aire seco convierte el secado de la ropa en un proceso mucho más rápido que en otras regiones del país. Incluso en invierno, cuando las temperaturas bajan, la menor humedad ambiental permite que las prendas se sequen con relativa facilidad al aire libre.</p>
+	</Fragment>
+	<Fragment slot="text2">
+		<p>Sin embargo, los cambios repentinos, como las lluvias de otoño o las tormentas de verano, pueden alterar esta rutina y retrasar la colada. Aquí es donde la <a class="underline" target="_blank" href="https://www.bosch-home.es/es/category/hacer-la-colada/secadoras">tecnología de Bosch</a> entra en juego: <strong>sus secadoras reducen el tiempo de secado con programas rápidos de 40 minutos y utilizan tecnologías para secar a temperaturas más bajas, lo que permite cuidar mejor las prendas</strong> y hacen que la ropa quede lista, suave y sin arrugas, independientemente del clima.</p>
+		<p>Gracias a Bosch, incluso los días de lluvia o humedad inesperada no interrumpen la rutina: la ropa se seca de manera uniforme y eficiente, manteniendo la calidad de los tejidos y el confort en el hogar. Así, secar la colada deja de ser solo una tarea y se convierte en un cuidado inteligente de cada prenda.</p>
+	</Fragment>
+</Popover>
+
+<Popover id="clima-4" color="bg-[#FBC466]" title="Clima Tropical" image1={imgClima7} image2={imgClima8}>
+	<Fragment slot="text1">
+		<h2 class="text-2xl font-bold text-balance text-[#00619D] lg:text-3xl">Canarias: clima suave y secado casi garantizado</h2>
+		<p>Las Islas Canarias gozan de un clima subtropical que hace que el secado de la ropa sea, en muchos casos, mucho más rápido que en el resto de España. Las temperaturas suaves durante todo el año, combinadas con una humedad moderada y brisas constantes, permiten que las prendas se sequen con facilidad, incluso al aire libre. Esto convierte la colada en una tarea mucho más sencilla, aunque las lluvias ocasionales y la humedad costera todavía pueden afectar al tiempo de secado.</p>
+	</Fragment>
+	<Fragment slot="text2">
+		<p><a class="underline" target="_blank" href="https://www.bosch-home.es/es/category/hacer-la-colada/secadoras">Bosch</a> aporta un valor añadido: <strong>sus secadoras transforman una tarea cotidiana en una experiencia de cuidado y eficiencia</strong>. Las secadoras Bosch están diseñadas para cuidar las prendas: reducen el desgaste y protegen las fibras. Y no, no encogen la ropa.</p>
+		<p>Así, aunque el clima canario facilite naturalmente el secado, Bosch permite que cada colada sea <strong>rápida, eficiente y delicada</strong>, manteniendo la calidad de las prendas y ofreciendo comodidad en cualquier momento. Secar la ropa deja de ser una preocupación y se convierte en un proceso inteligente y adaptable al estilo de vida de cada hogar.</p>
+	</Fragment>
+</Popover>

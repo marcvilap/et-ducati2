@@ -1,0 +1,29 @@
+---
+import videoHero from '@/assets/videos/hero.mp4'
+import SvgLogo from '@/assets/icons/logo.svg'
+import SvgChevronRight from '@/assets/icons/chevron-right.svg'
+---
+
+<div class="reveal group relative bg-[#E9DFBE] text-white">
+	<div class="mask-leaft group-reveal:mask-size-[50%] absolute inset-0 bg-black mask-size-[400%] delay-1000">
+		<video class="size-full object-cover opacity-70" src={videoHero} autoplay loop muted playsinline></video>
+	</div>
+
+	<div class="relative flex min-h-screen flex-col items-center justify-between gap-12 px-8 py-20 xl:px-24">
+		<a class="inline-flex flex-col self-start text-xs uppercase" href="/">
+			<strong>Recorriendo nuevos caminos</strong>
+			<span>Un proyecto de</span>
+			<SvgLogo class="mt-2 w-20" />
+		</a>
+
+		<div class="text-center">
+			<h1 class="group-reveal:translate-y-24 mx-auto max-w-sm text-3xl font-bold uppercase delay-1000">Kilómetros que huelen a otoño</h1>
+			<p class="group-reveal:opacity-0 group-reveal:translate-y-24 mx-auto my-8 max-w-2xl delay-1200">El otoño tiene su propio pulso. Un cielo que cambia de humor, una carretera que se transforma a cada curva y un aire que huele a tierra húmeda y hojas recién caídas. Es la estación en la que la naturaleza invita a desarrollar todos los sentidos y disfrutar del viaje, más que del destino.</p>
+			<p class="group-reveal:opacity-0 group-reveal:translate-y-24 delay-1400">
+				<button data-goto="1" class="inline-flex h-10 cursor-pointer items-center gap-3 rounded-full border px-6 tracking-widest">EXPLORAR <SvgChevronRight class="w-5" /></button>
+			</p>
+		</div>
+
+		<div></div>
+	</div>
+</div>
