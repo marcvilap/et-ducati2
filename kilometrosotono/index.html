@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="es-ES"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><meta name="robots" content="noindex,nofollow"><title>Kilómetros que huelen a otoño</title><meta property="description" content="El otoño tiene su propio pulso. Un cielo que cambia de humor, una carretera que se transforma a cada curva y un aire que huele a tierra húmeda y hojas recién caídas."><meta property="og:type" content="website"><meta property="og:url" content="/"><meta property="og:image" content="/thumbnail.png"><meta property="og:title" content="Kilómetros que huelen a otoño"><meta property="og:description" content="El otoño tiene su propio pulso. Un cielo que cambia de humor, una carretera que se transforma a cada curva y un aire que huele a tierra húmeda y hojas recién caídas."><meta property="twitter:card" content="summary_large_image"><meta property="twitter:image" content="/thumbnail.png"><meta property="twitter:title" content="Kilómetros que huelen a otoño"><meta property="twitter:description" content="El otoño tiene su propio pulso. Un cielo que cambia de humor, una carretera que se transforma a cada curva y un aire que huele a tierra húmeda y hojas recién caídas."><link rel="icon" href="/favicon.png"><!-- Didomi Eltiempo.es --><!-- No se puede eliminar --><script>
+	if (!window.didomiConfig) window.didomiConfig = {}
+	if (!window.didomiConfig.notice) window.didomiConfig.notice = {}
+	window.didomiConfig.notice.enable = false
+</script> <script data-description="Didomi SDK">
+	window.gdprAppliesGlobally = true
+	;(function () {
+		function n(e) {
+			if (!window.frames[e]) {
+				if (document.body && document.body.firstChild) {
+					var t = document.body
+					var r = document.createElement('iframe')
+					r.style.display = 'none'
+					r.name = e
+					r.title = e
+					t.insertBefore(r, t.firstChild)
+				} else {
+					setTimeout(function () {
+						n(e)
+					}, 5)
+				}
+			}
+		}
+		function e(r, a, o, s, c) {
+			function e(e, t, r, n) {
+				if (typeof r !== 'function') {
+					return
+				}
+				if (!window[a]) {
+					window[a] = []
+				}
+				var i = false
+				if (c) {
+					i = c(e, n, r)
+				}
+				if (!i) {
+					window[a].push({ command: e, version: t, callback: r, parameter: n })
+				}
+			}
+			e.stub = true
+			e.stubVersion = 2
+			function t(n) {
+				if (!window[r] || window[r].stub !== true) {
+					return
+				}
+				if (!n.data) {
+					return
+				}
+				var i = typeof n.data === 'string'
+				var e
+				try {
+					e = i ? JSON.parse(n.data) : n.data
+				} catch (t) {
+					return
+				}
+				if (e[o]) {
+					var a = e[o]
+					window[r](
+						a.command,
+						a.version,
+						function (e, t) {
+							var r = {}
+							r[s] = { returnValue: e, success: t, callId: a.callId }
+							n.source.postMessage(i ? JSON.stringify(r) : r, '*')
+						},
+						a.parameter,
+					)
+				}
+			}
+			if (typeof window[r] !== 'function') {
+				window[r] = e
+				if (window.addEventListener) {
+					window.addEventListener('message', t, false)
+				} else {
+					window.attachEvent('onmessage', t)
+				}
+			}
+		}
+		e('__uspapi', '__uspapiBuffer', '__uspapiCall', '__uspapiReturn')
+		n('__uspapiLocator')
+		e('__tcfapi', '__tcfapiBuffer', '__tcfapiCall', '__tcfapiReturn')
+		n('__tcfapiLocator')
+		;(function (e) {
+			var t = document.createElement('link')
+			t.rel = 'preconnect'
+			t.as = 'script'
+			var r = document.createElement('link')
+			r.rel = 'dns-prefetch'
+			r.as = 'script'
+			var n = document.createElement('link')
+			n.rel = 'preload'
+			n.as = 'script'
+			var i = document.createElement('script')
+			i.id = 'spcloader'
+			i.type = 'text/javascript'
+			i['async'] = true
+			var a = 'https://sdk.privacy-center.org/' + e + '/loader.js?target=' + document.location.hostname
+			if (window.didomiConfig && window.didomiConfig.user) {
+				var o = window.didomiConfig.user
+				var s = o.country
+				var c = o.region
+				if (s) {
+					a = a + '&country=' + s
+					if (c) {
+						a = a + '&region=' + c
+					}
+				}
+			}
+			t.href = 'https://sdk.privacy-center.org/'
+			r.href = 'https://sdk.privacy-center.org/'
+			n.href = a
+			i.src = a
+			var d = document.getElementsByTagName('script')[0]
+			d.parentNode.insertBefore(t, d)
+			d.parentNode.insertBefore(r, d)
+			d.parentNode.insertBefore(n, d)
+			d.parentNode.insertBefore(i, d)
+		})('c9724c50-1caa-40a9-9c18-ef7c27b8e01b')
+	})()
+</script> <script>
+	!(function () {
+		var cpBaseUrl = 'https://cp.eltiempo.es'
+		var cpController = cpBaseUrl + '/now.js'
+		var cpPropertyId = '4fb43238'
+
+		!(function (C, o, n, t, P, a, s) {
+			C['CPObject'] = n
+			C[n] ||
+				(C[n] = function () {
+					;(C[n].q = C[n].q || []).push(arguments)
+				})
+			C[n].l = +new Date()
+			a = o.createElement(t)
+			s = o.getElementsByTagName(t)[0]
+			a.src = P
+			s.parentNode.insertBefore(a, s)
+		})(window, document, 'cp', 'script', cpController)
+		cp('create', cpPropertyId, {
+			baseUrl: cpBaseUrl,
+		})
+		cp('render', {
+			onFullConsent: function () {
+				document.cookie = 'consent_state=0; SameSite=strict; Secure; path=/'
+			},
+		})
+		cp('authenticate', function (error, user) {
+			if (error) {
+				return
+			}
+
+			if (user.isLoggedIn() && user.hasValidSubscription()) {
+				document.cookie = 'consent_state=1; SameSite=strict; Secure; path=/'
+			} else {
+				document.cookie = 'consent_state=0; SameSite=strict; Secure; path=/'
+			}
+		})
+	})()
+</script> <!-- End Didomi Eltiempo.es --><!-- Google Tag Manager Eltiempo.es --><!-- No se puede eliminar --><script>
+	;(function (w, d, s, l, i) {
+		w[l] = w[l] || []
+		w[l].push({
+			'gtm.start': new Date().getTime(),
+			event: 'gtm.js',
+		})
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s),
+			dl = l != 'dataLayer' ? '&l=' + l : ''
+		j.async = true
+		j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+		f.parentNode.insertBefore(j, f)
+	})(window, document, 'script', 'dataLayer', 'GTM-K9DJJ6X')
+</script> <!-- End Google Tag Manager Eltiempo.es --><link rel="stylesheet" href="/bc/kilometrosotono/_astro/index.BGlVvdXL.css"></head> <body> <nav class="absolute inset-x-0 top-0 z-20 flex h-[48px] items-center justify-between bg-white/90 px-[24px] shadow backdrop-blur lg:px-[48px]"> <button class="w-[32px] cursor-pointer text-black" onclick="history.back()" aria-label="Back"> <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="stroke-3"><path d="m15 6-6 6 6 6" /></svg> </button> <a class="w-[96px]" target="_blank" rel="noreferrer" href="https://eltiempo.es" aria-label="ElTiempo"><svg viewBox="0 0 1000 334" class="text-[#04aeef]"><path fill="#ffac27" d="M604 106q-47-43-116-45h-10l-26 3a223 223 0 0 0-331 19l-3 3a125 125 0 0 0-42 239q-25-12-42-34l-2-2-9-15q-11-23-12-50c0-62 50-113 113-113h1a205 205 0 0 1 315-25l1 1q26-9 55-9c53 0 101 23 134 60q-10-17-26-32" /><path fill="currentColor" d="m309 263-3 19q-11 6-28 5c-23 0-27-12-27-23l1-10 9-47h-17l4-22h17l9-26h28l-5 26h28l-4 22h-28l-8 42-1 6q-1 7 9 8zm52-121q15 1 16 16c0 10-9 18-18 18-10 0-16-8-16-16 0-10 9-18 18-18m9 43-15 79h17l-3 17q-7 6-24 6c-17 0-21-9-21-17l1-11 14-74zm-122-46-25 127h17l-3 16q-9 5-24 6c-19 0-21-14-21-19l2-18 17-88-2-1-16-2 4-19c14-2 36-3 51-2m-58 70c0 32-34 40-62 37v7q1 14 22 13 14 0 27-5l1 21q-12 5-40 6c-17 0-43-9-43-38 0-50 37-66 60-66 19-1 35 8 35 25m-30 2q-1-8-9-7c-12 0-20 12-21 22 8 1 30-1 30-15m689 13c0 32-20 63-56 63-25 0-44-11-44-39 0-29 21-65 58-65 22 0 42 12 42 41m-33 1c0-8-3-16-11-16-15 0-22 27-22 40q0 12 11 14c13 0 22-23 22-38m41 35q13 1 13 13-1 14-15 15-12-1-13-13 2-14 15-15m86-25c0 22-23 27-42 25v3c0 5 2 10 15 10l19-3v14q-8 4-26 4c-13 0-31-6-31-26 0-34 26-45 41-45 13 1 24 7 24 18m-20 2q-1-5-6-5c-8 0-14 8-15 15 6 0 21-1 21-10m-180-14c0 41-33 65-52 65l-19-2-9 48h-25c-7 0-6-4-5-9l23-117-2-1-16-2 4-19 42-2-5 18h1q17-21 33-19c9 0 30 7 30 40m-32 2q0-17-9-17-16 1-21 33l-4 23 7 1c17 0 27-26 27-40m-95 40 16-1-3 17q-11 6-26 6-24-2-19-20l9-47q2-7-4-8-9 1-17 12l-12 61h-26q-6-1-4-6l12-59q2-7-5-8c-4 0-12 6-15 12l-12 62h-25q-6 0-5-6l14-72h-2l-15-2 4-19q20-3 42-2l-3 19q19-22 34-21 17 0 20 17 13-16 34-17c9 0 22 7 19 24zm359-25c0 7 21 16 21 28q0 19-28 20c-8 0-19-3-23-6l3-15q7 5 16 5 8 0 8-5c0-9-20-15-20-29q0-20 26-21 12 0 22 8l-4 13q-7-5-13-5-8 1-8 7m-503-31c0 32-34 40-62 37v7q1 14 22 13 14 0 27-5l1 21q-12 5-40 6c-17 0-43-9-43-38 0-50 37-66 60-66 20-1 35 8 35 25m-29 2q-1-8-9-7c-12 0-19 12-21 22 8 1 30-1 30-15m189-72q2 4 9 6l-2 2a175 175 0 0 0-202-32l-18-19-1-1a182 182 0 0 0-262 19l-12 16h-6a105 105 0 0 0-47 199v2l-13-5-4-2q-23-12-38-32l-2-2-9-15q-12-23-12-50c0-63 51-113 113-113h1a205 205 0 0 1 315-25l1 1q26-9 55-9c53 0 101 23 134 60" /></svg></a> <span class="w-[32px]"></span> </nav>  <main class="relative overflow-clip xl:h-[1000vw]"> <div id="container" class="xl:sticky xl:top-0 xl:grid xl:min-h-screen xl:w-[1000vw] xl:grid-cols-10 xl:will-change-transform"> <div class="reveal group relative bg-[#E9DFBE] text-white"> <div class="mask-leaft group-reveal:mask-size-[50%] absolute inset-0 bg-black mask-size-[400%] delay-1000"> <video class="size-full object-cover opacity-70" src="/bc/kilometrosotono/_astro/hero.CaWkftXG.mp4" autoplay loop muted playsinline></video> </div> <div class="relative flex min-h-screen flex-col items-center justify-between gap-12 px-8 py-20 xl:px-24"> <a class="inline-flex flex-col self-start text-xs uppercase" href="/"> <strong>Recorriendo nuevos caminos</strong> <span>Un proyecto de</span> <svg viewBox="0 0 915 974" class="mt-2 w-20"><path fill="#fff" d="M82 83C44 101 0 141 0 229l3 43 1 7a1011 1011 0 0 0 294 596c1 1 70 69 104 86 24 13 49 13 55 13h-1 2-1c6 0 31 0 55-13 34-17 103-85 104-86 92-93 149-175 211-305 61-128 77-251 83-291l1-7c16-116-34-167-78-189A847 847 0 0 0 457 0Q252 0 82 83" /><path fill="#e51e23" d="M622 423c-243 38-360 102-417 163-44 46-29 82-17 103a939 939 0 0 0 228 244c20 9 40 9 41 9s21 0 41-9a971 971 0 0 0 356-532v-1c-53 1-128 6-232 23M177 201h-4l-15 67h5q12 0 17-7 7-8 10-26 4-18 1-26-2-8-14-8m642-89a823 823 0 0 0-362-80c-116 0-242 22-362 80q-63 32-63 117l3 39 1 7c3 28 13 98 40 182 32-41 158-75 381-87 210-11 361-10 407-10q12-60 14-85l1-7q17-118-60-156M240 236c-8 37-37 61-75 61h-61l26-124h59c49 0 59 26 51 63m58 64q-58 0-50-45l18-82h49l-17 80q-2 15 7 14 8 0 12-14l17-80h49l-17 82q-11 45-68 45m134 0c-43 0-58-27-50-66s36-65 78-65c31 0 55 13 47 49h-45c3-14-2-16-8-16-13 0-17 13-21 33-4 18-6 33 6 33q11 1 15-17h46c-7 34-37 49-68 49m148-3v-20h-36l-9 20h-47l66-124h63l14 124zm115 0h-49l19-91h-30l7-33h110l-8 33h-30zm88 0h-48l26-124h49zm-225-50h21v-47z" /></svg> </a> <div class="text-center"> <h1 class="group-reveal:translate-y-24 mx-auto max-w-sm text-3xl font-bold uppercase delay-1000">Kilómetros que huelen a otoño</h1> <p class="group-reveal:opacity-0 group-reveal:translate-y-24 mx-auto my-8 max-w-2xl delay-1200">El otoño tiene su propio pulso. Un cielo que cambia de humor, una carretera que se transforma a cada curva y un aire que huele a tierra húmeda y hojas recién caídas. Es la estación en la que la naturaleza invita a desarrollar todos los sentidos y disfrutar del viaje, más que del destino.</p> <p class="group-reveal:opacity-0 group-reveal:translate-y-24 delay-1400"> <button data-goto="1" class="inline-flex h-10 cursor-pointer items-center gap-3 rounded-full border px-6 tracking-widest">EXPLORAR <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-5"><path d="m9 6 6 6-6 6" /></svg></button> </p> </div> <div></div> </div> </div> <div class="relative grid gap-8 py-24 max-xl:px-8 lg:grid-cols-3 xl:gap-24"> <img src="/bc/kilometrosotono/_astro/bg-leaf.CVJW2_cf_Z24jh7g.webp" srcset="/bc/kilometrosotono/_astro/bg-leaf.CVJW2_cf_W4CCG.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="640" height="653" class="absolute top-0 left-0 w-1/3 opacity-50 blur-xs"> <div class="flex flex-col justify-center gap-8 text-xl xl:pl-24"> <p class="reveal reveal:opacity-0 reveal:translate-y-24">En esa invitación, la nueva <a rel="sponsored" href="https://www.ducati.com/es/es/motocicletas/multistrada/multistrada-v2" target="_blank" rel="noopener noreferrer"> Ducati Multistrada V2</a> se presenta como la compañera perfecta: ligera, cómoda, potente y lista para convertir cada kilómetro en una experiencia sensorial.</p> </div> <div class="grid grid-cols-2 gap-4 lg:col-span-2"> <div class="reveal reveal:opacity-0 reveal:scale-90 relative"> <img src="/bc/kilometrosotono/_astro/ducati-01.Cd7lSc6g_ZpA6X7.webp" srcset="/bc/kilometrosotono/_astro/ducati-01.Cd7lSc6g_Z11W1X6.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="610" height="813" class="size-full object-cover xl:absolute"> </div> <div class="reveal reveal:opacity-0 reveal:scale-90 relative xl:-mr-72"> <img src="/bc/kilometrosotono/_astro/ducati-02.DEo5qjW7_Z1DRWnC.webp" srcset="/bc/kilometrosotono/_astro/ducati-02.DEo5qjW7_198xOu.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="970" height="647" class="size-full object-cover xl:absolute"> </div> </div> </div> <div class="grid gap-8 max-xl:px-8 lg:grid-cols-2 xl:grid-cols-3 xl:gap-24 xl:py-24"> <div class="reveal reveal:opacity-0 reveal:translate-y-24 flex flex-col justify-center gap-8 xl:col-span-2 xl:pl-96"> <h2 class="text-4xl font-bold text-balance uppercase md:text-6xl xl:text-7xl">Redescubrir lo cotidiano</h2> <p class="xl:max-w-sm">En otoño, las rutas se llenan de matices: el sonido del viento entre los árboles, la luz dorada que se filtra entre las nubes, el contraste entre el asfalto húmedo y el calor del motor.</p> <p class="xl:max-w-sm">La <strong>Multistrada V2</strong> está pensada para eso, para reconectar con la carretera y con uno mismo, con una conducción fluida y natural que se adapta tanto al día soleado como al chaparrón inesperado.</p> </div> <div class="relative max-md:aspect-square"> <img src="/bc/kilometrosotono/_astro/ducati-04.BpUhq8DV_I87vn.webp" srcset="/bc/kilometrosotono/_astro/ducati-04.BpUhq8DV_Rj8U7.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="560" height="840" class="reveal reveal:opacity-0 reveal:scale-90 absolute size-full object-cover"> <img src="/bc/kilometrosotono/_astro/leaf.CDcHJISs_qNiAh.webp" srcset="/bc/kilometrosotono/_astro/leaf.CDcHJISs_drrA6.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="280" height="263" class="reveal reveal:opacity-0 reveal:scale-90 absolute bottom-8 -left-12 w-48 max-lg:hidden xl:-left-32"> </div> </div> <div class="grid items-center gap-y-8 px-8 py-24 xl:grid-cols-2"> <div class="reveal reveal:opacity-0 reveal:scale-90 relative xl:px-24"> <h2 class="text-4xl font-bold text-balance uppercase md:text-6xl xl:text-7xl">Un corazón pensado para la aventura: el nuevo motor Ducati V2</h2> <img src="/bc/kilometrosotono/_astro/leaf.CDcHJISs_qNiAh.webp" srcset="/bc/kilometrosotono/_astro/leaf.CDcHJISs_drrA6.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="280" height="263" class="absolute top-10 right-24 w-56 rotate-90 max-xl:hidden"> </div> <div class="reveal reveal:opacity-0 reveal:translate-y-24 space-y-4 lg:columns-2 lg:gap-8"> <p>Bajo su carenado late un motor completamente nuevo: el <strong>Ducati V2</strong>, un bicilíndrico en V a 90° de 890 cc con distribución variable IVT. Una de las principales características de este nuevo motor, es su reducción de peso, solo 54,9 kilos, es decir 18 kilos menos que sus predecesoras, haciendo de esta que sea mucho más fácil de manejar.</p> <p>Un motor ligero pero con una respuesta que ofrece 115 CV de potencia a 10.750 rpm y 92 Nm de par a 8.250 rpm, garantizando un manejo suave, controlado y lleno de energía en cualquier situación. La sensación de empuje es inmediata, pero nunca agresiva, perfecta para <strong>disfrutar del ritmo cambiante de las carreteras otoñales</strong>.</p> <p>El resultado es una conducción más ágil, intuitiva y placentera. A bajas revoluciones, el motor ofrece una entrega de par generosa y progresiva, ideal para curvas lentas o recorridos urbanos. En carretera abierta, libera toda su alma deportiva con ese sonido inconfundible de Ducati Además, las nuevas relaciones de cambio, más cortas en primera y segunda, mejoran el control en tramos técnicos o de baja velocidad, <strong>ideal para sortear curvas cerradas o caminos de montaña</strong>. Además su sistema Ducati Quick Shift 2.0 garantiza transiciones más suaves y precisas entre marchas.</p> <p>Esta optimización no solo se traduce en mejores prestaciones, sino también en una mayor eficiencia y en una reducción del consumo. En definitiva, una moto que combina la emoción deportiva con la practicidad de un motor robusto, refinado y <strong>preparado para cualquier aventura</strong>.</p> </div> </div> <div class="reveal reveal:opacity-0 reveal:scale-90 relative"> <img src="/bc/kilometrosotono/_astro/ducati-03.C3B4zkdT_177bLN.webp" alt loading="lazy" decoding="async" fetchpriority="auto" width="1920" height="1080" class="top-0 left-0 size-full mask-l-from-50% object-cover xl:absolute"> </div> <div class="relative grid items-center gap-8 overflow-clip px-8 py-24 lg:grid-cols-2 xl:gap-24 xl:px-24"> <img src="/bc/kilometrosotono/_astro/bg-leaf.CVJW2_cf_Z24jh7g.webp" srcset="/bc/kilometrosotono/_astro/bg-leaf.CVJW2_cf_W4CCG.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="640" height="653" class="absolute top-0 -left-1 w-1/3 opacity-50 blur-xs"> <div class="reveal reveal:opacity-0 reveal:scale-90 -mr-20 -ml-38 xl:-mr-26 xl:-ml-44"> <img src="/bc/kilometrosotono/_astro/ducati-05.Bo42jM2Z_1DDGv4.webp" srcset="/bc/kilometrosotono/_astro/ducati-05.Bo42jM2Z_22sewN.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="1130" height="626" class="w-full"> </div> <div class="reveal reveal:opacity-0 reveal:translate-y-24 relative space-y-4"> <img src="/bc/kilometrosotono/_astro/leaf.CDcHJISs_qNiAh.webp" srcset="/bc/kilometrosotono/_astro/leaf.CDcHJISs_drrA6.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="280" height="263" class="absolute top-0 -z-1 w-32 rotate-45 max-xl:right-0 xl:-left-24 xl:w-48"> <h2 class="mb-8 text-4xl font-bold text-balance uppercase md:text-6xl lg:text-right xl:text-7xl">Diseño que respira movimiento</h2> <p>El diseño de la <a href="https://www.ducati.com/es/es/motocicletas/multistrada/multistrada-v2" rel="sponsored" target="_blank"> Multistrada V2 </a>de Ducati recoge el ADN inconfundible de Ducati: una silueta equilibrada y con un frontal agresivo con su característico “pico”. Las líneas fluyen como una corriente de aire, pensadas no solo para la estética, sino para la funcionalidad.</p> <p>El trabajo aerodinámico se nota en la protección contra el viento y en la gestión térmica: los nuevos deflectores laterales canalizan aire fresco hacia las piernas del piloto, mejorando el confort incluso en trayectos largos. También su colín se ha estrechado y acortado ligeramente para mejorar la ergonomía del pasajero, algo que se agradece ya que muchas veces las mejores rutas, son en compañía.</p> </div> </div> <div class="grid lg:grid-cols-2 lg:overflow-clip xl:py-24"> <div class="reveal reveal:opacity-0 reveal:scale-90 relative max-lg:aspect-video"> <img src="/bc/kilometrosotono/_astro/ducati-06.BbA0O_px_Z2qQdtO.webp" srcset="/bc/kilometrosotono/_astro/ducati-06.BbA0O_px_aJAfJ.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="960" height="540" class="absolute size-full object-cover"> </div> <div class="reveal reveal:opacity-0 reveal:scale-90 flex flex-col justify-center px-8 xl:px-24"> <h2 class="text-4xl font-bold text-balance uppercase max-lg:mb-8 max-lg:translate-y-24 md:text-6xl xl:text-7xl">Ligereza y ergonomía: una moto para todos los caminos</h2> </div> </div> <div class="grid gap-y-24 overflow-clip py-24 xl:grid-cols-3 xl:gap-24"> <div class="reveal reveal:opacity-0 reveal:translate-y-24 flex flex-col justify-center space-y-4 max-xl:px-8"> <p>La <strong>Multistrada V2</strong> no solo busca el rendimiento, sino también la accesibilidad. Ducati ha reducido su peso en 18 kilos respecto al modelo anterior, lo que la convierte en una de las más ligeras de su categoría. Este dato se traduce en una moto más manejable, más fácil de llevar en curvas o maniobrar en parado, perfecta tanto para conductores experimentados como para quienes buscan dar un salto a una moto versátil.</p> <p>La ergonomía se ha revisado al detalle. El asiento puede ajustarse entre 850 y 830 mm, y existe la opción de elevarlo o bajarlo aún más según la complexión del piloto gracias a los asientos disponibles como accesorios. Además, gracias a la suspensión electrónica <strong>Ducati Skyhook Suspension</strong>, disponible en la versión S, y el botón dedicado en la piña izquierda que baja la suspensión de la moto en otros 8mm, facilita aún más las maniobras en parado).</p> </div> <div class="relative grid grid-cols-12 max-xl:aspect-video lg:gap-4 xl:col-span-2"> <div class="reveal reveal:opacity-0 reveal:scale-90 relative col-span-5"> <img src="/bc/kilometrosotono/_astro/ducati-07.DEFk4Nn4_2oHYlJ.webp" srcset="/bc/kilometrosotono/_astro/ducati-07.DEFk4Nn4_Z10E1wn.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="505" height="757" class="absolute size-full object-cover"> </div> <div class="reveal reveal:opacity-0 reveal:scale-90 relative col-span-7"> <img src="/bc/kilometrosotono/_astro/ducati-08.H5Qx5GV6_2iCrDu.webp" srcset="/bc/kilometrosotono/_astro/ducati-08.H5Qx5GV6_2lHVTD.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="715" height="550" class="absolute size-full object-cover"> </div> <img src="/bc/kilometrosotono/_astro/leaf.CDcHJISs_qNiAh.webp" srcset="/bc/kilometrosotono/_astro/leaf.CDcHJISs_drrA6.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="280" height="263" class="absolute -top-12 right-24 w-32 -rotate-90 xl:w-48"> </div> </div> <div class="relative grid overflow-clip pb-24 lg:grid-cols-2 xl:px-24 xl:py-24"> <img src="/bc/kilometrosotono/_astro/leaf.CDcHJISs_qNiAh.webp" srcset="/bc/kilometrosotono/_astro/leaf.CDcHJISs_drrA6.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="280" height="263" class="absolute right-6 bottom-12 -z-1 w-36 rotate-90 max-xl:hidden"> <div class="reveal reveal:opacity-0 reveal:scale-90 relative xl:mr-24"> <img src="/bc/kilometrosotono/_astro/ducati-09.BLL6hYRt_ZP4uy3.webp" srcset="/bc/kilometrosotono/_astro/ducati-09.BLL6hYRt_LtfxU.webp 2x" alt loading="lazy" decoding="async" fetchpriority="auto" width="630" height="420" class="absolute size-full object-cover"> </div> <div class="reveal reveal:opacity-0 reveal:translate-y-24 flex flex-col justify-center space-y-4 max-xl:px-8"> <h2 class="mb-8 text-4xl font-bold text-balance uppercase md:text-6xl xl:-mr-16 xl:text-6xl">Una compañera para la estación más viva</h2> <p><strong>Hay algo en el otoño que invita a salir sin rumbo fijo</strong>, a perderse entre carreteras secundarias y a disfrutar del simple hecho de rodar. La <a class="underline" target="_blank" href="https://www.ducati.com/es/es/motocicletas/multistrada/multistrada-v2">Ducati Multistrada V2</a> está hecha para esos momentos: ágil en las curvas, segura sobre el asfalto húmedo y cómoda incluso en los trayectos más largos. Cada tecnología, cada detalle, está pensado para acompañar al piloto en ese viaje que empieza con el sonido de la primera marcha y termina cuando el paisaje se tiñe de dorado.</p> <p>Porque no se trata sólo de recorrer kilómetros, sino de sentirlos. De que cada salida sea distinta, como lo es cada día de otoño. Con la Multistrada V2, <strong>la carretera se convierte en una extensión de tus sentidos</strong>: una invitación a explorar, a respirar y a disfrutar del viaje.</p> </div> </div> <div class="flex flex-col"> <div class="relative grow bg-black max-xl:aspect-video"> <video class="absolute top-0 left-0 size-full object-cover opacity-70" src="/bc/kilometrosotono/_astro/footer.BDgLcgS6.mp4" autoplay loop muted playsinline></video> </div> <div class="shrink-0 bg-white pt-8 pb-16 text-black"> <div class="container space-y-2 text-center text-xs"> <p>Eltiempo Content para</p> <svg viewBox="0 0 915 974" class="mx-auto w-16"><path fill="#fff" d="M82 83C44 101 0 141 0 229l3 43 1 7a1011 1011 0 0 0 294 596c1 1 70 69 104 86 24 13 49 13 55 13h-1 2-1c6 0 31 0 55-13 34-17 103-85 104-86 92-93 149-175 211-305 61-128 77-251 83-291l1-7c16-116-34-167-78-189A847 847 0 0 0 457 0Q252 0 82 83" /><path fill="#e51e23" d="M622 423c-243 38-360 102-417 163-44 46-29 82-17 103a939 939 0 0 0 228 244c20 9 40 9 41 9s21 0 41-9a971 971 0 0 0 356-532v-1c-53 1-128 6-232 23M177 201h-4l-15 67h5q12 0 17-7 7-8 10-26 4-18 1-26-2-8-14-8m642-89a823 823 0 0 0-362-80c-116 0-242 22-362 80q-63 32-63 117l3 39 1 7c3 28 13 98 40 182 32-41 158-75 381-87 210-11 361-10 407-10q12-60 14-85l1-7q17-118-60-156M240 236c-8 37-37 61-75 61h-61l26-124h59c49 0 59 26 51 63m58 64q-58 0-50-45l18-82h49l-17 80q-2 15 7 14 8 0 12-14l17-80h49l-17 82q-11 45-68 45m134 0c-43 0-58-27-50-66s36-65 78-65c31 0 55 13 47 49h-45c3-14-2-16-8-16-13 0-17 13-21 33-4 18-6 33 6 33q11 1 15-17h46c-7 34-37 49-68 49m148-3v-20h-36l-9 20h-47l66-124h63l14 124zm115 0h-49l19-91h-30l7-33h110l-8 33h-30zm88 0h-48l26-124h49zm-225-50h21v-47z" /></svg> <p class="font-medium uppercase"> <a class="hover:underline" target="_blank" href="https://www.eltiempo.es/bc/eltiempocontent/">La fábrica de contenidos de ElTiempo </a> <span>|</span> <a class="hover:underline" target="_blank" href="https://www.eltiempo.es/bc/marcasresponsables/">Marcas Responsables</a> </p> <p> <a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/politica-privacidad.html">Política de privacidad</a> <span>|</span> <a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/condiciones-generales.html">Aviso legal</a> <span>|</span> <a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/politica-cookies.html">Política de cookies</a> </p> <hr class="mx-auto w-64"> <p> <a class="hover:underline" target="_blank" href="https://www.eltiempo.es/">© eltiempo, Pelmorex Weather Networks 2025</a> </p> </div> </div> </div> </div> </main> <nav id="navigation" class="fixed inset-x-12 bottom-6 z-10 flex h-0.5 items-center justify-between rounded-full bg-[#E0D9C5] max-xl:hidden"> <span id="navigation-scroll" class="absolute inset-y-0 left-0 rounded-full bg-[#6E1B01]"></span> <button data-goto="0" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="1" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="2" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="3" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="4" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="5" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="6" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="7" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="8" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> <button data-goto="9" class="z-10 size-2 cursor-pointer rounded-full bg-[#E0D9C5]"></button> </nav>  <script type="module">const n=document.querySelector("#container"),s=document.querySelector("#navigation-scroll"),a=document.querySelectorAll("#navigation button"),c=()=>{if(!n||!s||window.innerWidth<1280){n?.style.removeProperty("transform"),s?.style.removeProperty("width"),a.forEach(r=>{r.style.backgroundColor="#E0D9C5"});return}const t=document.documentElement.scrollHeight-window.innerHeight,e=n.scrollWidth-window.innerWidth;n.style.transform=`translateX(${-(window.scrollY/t)*e}px)`;const o=window.scrollY/t*100;if(s.style.width=`${o}%`,document.querySelector("nav")&&s){const r=s.offsetWidth;a.forEach(l=>{const d=l.offsetLeft+l.offsetWidth/2;l.style.backgroundColor=d<=r?"#6E1B01":"#E0D9C5"})}};window.addEventListener("scroll",c,{passive:!0});window.addEventListener("resize",c);c();document.addEventListener("click",t=>{const e=t.target.closest("button[data-goto]");if(e&&n){const o=parseInt(e.dataset.goto||"0"),i=document.documentElement.scrollHeight-window.innerHeight,r=n.scrollWidth-window.innerWidth,l=o*window.innerWidth/(r/i);window.scrollTo({top:l,behavior:"smooth"})}});const w=new IntersectionObserver(t=>{t.forEach(({isIntersecting:e,target:o})=>{o.classList.toggle("reveal",!e),o.classList.toggle("revealed",e)})});document.querySelectorAll(".reveal").forEach(t=>w.observe(t));</script> </body> </html>

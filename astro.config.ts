@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-	//base:"",
+	//base: '/bc/kilometrosotono/',
 	devToolbar: { enabled: false },
 	vite: { plugins: [tailwindcss()] },
 })
