@@ -3,36 +3,32 @@ import videoFooter from '@/assets/videos/footer.mp4'
 import SvgLogo from '@/assets/icons/logo.svg'
 ---
 
-<div class="flex flex-col">
-	<div class="relative grow bg-black max-xl:aspect-video">
-		<video class="absolute top-0 left-0 size-full object-cover opacity-70" src={videoFooter} autoplay loop muted playsinline></video>
-	</div>
+<div class="relative flex min-h-screen flex-col justify-end bg-black px-8 py-16 text-white">
+	<video class="absolute top-0 left-0 size-full object-cover opacity-70" src={videoFooter} autoplay loop muted playsinline></video>
 
-	<div class="shrink-0 bg-white pt-8 pb-16 text-black">
-		<div class="container space-y-2 text-center text-xs">
-			<p>Eltiempo Content para</p>
+	<div class="relative space-y-2 text-center text-xs">
+		<p>Eltiempo Content para</p>
 
-			<SvgLogo class="mx-auto w-16" />
+		<SvgLogo class="mx-auto w-16" />
 
-			<p class="font-medium uppercase">
-				<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/bc/eltiempocontent/">La fábrica de contenidos de ElTiempo </a>
-				<span>|</span>
-				<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/bc/marcasresponsables/">Marcas Responsables</a>
-			</p>
+		<p class="font-medium uppercase">
+			<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/bc/eltiempocontent/">La fábrica de contenidos de ElTiempo </a>
+			<span>|</span>
+			<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/bc/marcasresponsables/">Marcas Responsables</a>
+		</p>
 
-			<p>
-				<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/politica-privacidad.html">Política de privacidad</a>
-				<span>|</span>
-				<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/condiciones-generales.html">Aviso legal</a>
-				<span>|</span>
-				<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/politica-cookies.html">Política de cookies</a>
-			</p>
+		<p>
+			<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/politica-privacidad.html">Política de privacidad</a>
+			<span>|</span>
+			<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/condiciones-generales.html">Aviso legal</a>
+			<span>|</span>
+			<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/legal/politica-cookies.html">Política de cookies</a>
+		</p>
 
-			<hr class="mx-auto w-64" />
+		<hr class="mx-auto w-64" />
 
-			<p>
-				<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/">© eltiempo, Pelmorex Weather Networks 2025</a>
-			</p>
-		</div>
+		<p>
+			<a class="hover:underline" target="_blank" href="https://www.eltiempo.es/">© eltiempo, Pelmorex Weather Networks 2025</a>
+		</p>
 	</div>
 </div>
